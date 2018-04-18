@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  webapplication1:
+    image: dot_net_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "51075:80"
